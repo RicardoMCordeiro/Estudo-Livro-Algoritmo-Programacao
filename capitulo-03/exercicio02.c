@@ -2,12 +2,16 @@
     Autor: João Pedro Araújo Arruda 
     Semestre: 1º Semestre
     Email: jpedroaraujo2004@gmail.com
+   
     Descricao: 
         Exercicio 02 do Capitulo 3
-        Enunciado: Faça um algoritmo que leia um número inteiro e 
+       
+       Enunciado: Faça um algoritmo que leia um número inteiro e 
         diga se este número é positivo, negativo ou zero. Utilize
         a sequência de se encadeado
-        */
+       
+       
+       */
 #include <stdio.h>
 
 int main()
