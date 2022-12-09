@@ -8,6 +8,8 @@
         
         Enunciado: Faça um algoritmo que leia um número inteiro diferente de zero e 
         diga se este número é positivo ou negativo
+        
+        
         */
 #include <stdio.h>
 
