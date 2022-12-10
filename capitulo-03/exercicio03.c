@@ -1,28 +1,27 @@
 /*
-    Autor: João Pedro Araújo Arruda 
+    Autor: Joao Pedro Araujo Arruda 
     Semestre: 1º Semestre
     Email: jpedroaraujo2004@gmail.com
    
     Descricao: 
         Exercicio 03 do Capitulo 3
        
-        Enunciado: Faça um algoritmo que leia um número inteiro e 
-        diga se este número é par ou ímpar
-        
-        
-        */
+        Enunciado: Faça um algoritmo que leia um numero inteiro e 
+        diga se este numero e par ou impar
+*/
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int num;
-    scanf("%d\n", &num);
 
-    if(num%2==0){    
-    printf("o número é par");
+    printf("Informe um numero inteiro: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {    
+        printf("O numero e par.\n");
     }
-    else if(num%2!=0){
-        printf("o número é ímpar");
+    else if (num % 2 != 0) {
+        printf("O numero e impar.\n");
     }
 
     return 0;
