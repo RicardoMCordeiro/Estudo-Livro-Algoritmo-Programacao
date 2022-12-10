@@ -12,10 +12,11 @@
 */
 #include <stdio.h>
 
+void existenciaTriangulo(float segmento_AB, float segmento_CD, float segmento_EF);
+void tipoTiangulo(float segmento_AB, float segmento_CD, float segmento_EF);
+
 int main() {
 
-    void existenciaTriangulo(float segmento_AB, float segmento_CD, float segmento_EF);
-    void tipoTiangulo(float segmento_AB, float segmento_CD, float segmento_EF);
 /*
     Segundo a condicao de existencia de um triangulo: tres segmentos de reta so formarao um triangulo, se a soma de dois de
     dois de seus lados for maior que o terceiro lado.
@@ -39,22 +40,23 @@ int main() {
     return 0;
 }
 
-    void existenciaTriangulo(float segmento_AB, float segmento_CD, float segmento_EF){
-        if(segmento_AB + seguimento_CD > seguimento_EF && seguimento_CD + seguimento_EF > seguimento_AB && seguimento_AB + seguimento_EF > CD){
-            printf("O triangulo possui a condicao de existencia!");
-        }else{
-            printf("O triangulo nao possui a condicao de existencia!");
-        }
+void existenciaTriangulo(float segmento_AB, float segmento_CD, float segmento_EF){
+    if(segmento_AB + seguimento_CD > seguimento_EF && seguimento_CD + seguimento_EF > seguimento_AB && seguimento_AB + seguimento_EF > CD){
+        printf("O triangulo possui a condicao de existencia!");
+    }else{
+        printf("O triangulo nao possui a condicao de existencia!");
     }
-    void tipoTiangulo(float segmento_AB, float segmento_CD, float segmento_EF){
-        if(segmento_AB + seguimento_CD > seguimento_EF && seguimento_CD + seguimento_EF > seguimento_AB && seguimento_AB + seguimento_EF > CD){
-            if(segmento_AB == seguimento_CD && seguimento_AB == seguimento_EF)
+}
+
+void tipoTiangulo(float segmento_AB, float segmento_CD, float segmento_EF){
+    if(segmento_AB + seguimento_CD > seguimento_EF && seguimento_CD + seguimento_EF > seguimento_AB && seguimento_AB + seguimento_EF > CD){
+        if(segmento_AB == seguimento_CD && seguimento_AB == seguimento_EF)
             printf("Triangulo equilatero.");
-            if(segmento_AB == seguimento_CD && seguimento_AB != seguimento_EF)
+        if(segmento_AB == seguimento_CD && seguimento_AB != seguimento_EF)
             printf("Triangulo isosceles.");
-            if(segmento_AB != seguimento_CD && seguimento_AB != seguimento_EF)
+        if(segmento_AB != seguimento_CD && seguimento_AB != seguimento_EF)
             printf("Triangulo escaleno.");
-        }
     }
+}
         
         
