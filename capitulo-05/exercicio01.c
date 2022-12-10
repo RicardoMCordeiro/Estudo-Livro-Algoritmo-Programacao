@@ -7,7 +7,7 @@
         Exercicio 01 do Capitulo 5
 
         Enunciado: Faca um algoritmo que receba o tamanho dos tres lados de um triangulo e faca as seguintes atividades: retorne 
-        se os tres lados realmente formam um triangulo e que tipo de triangulo eh esse 
+        se os tres lados realmente formam um triangulo e que tipo de triangulo eh esse. Cada uma destas atividades deve ser um modulo.
         
 */
 #include <stdio.h>
