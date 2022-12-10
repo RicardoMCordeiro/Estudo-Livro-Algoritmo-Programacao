@@ -21,7 +21,9 @@ int main(void) {
   MMC de A e B = (A * B) / MDC de A e B
 */
   int num1, num2;
-  scanf("%i%i", &num1, &num2);
+  printf("Informe os dois numeros que deseja calcular o MMC:");
+  scanf("%i", &num1);
+  scanf("%i", &num2);
   printf("%i", MMC_de_dois_numeros(num1, num2));
   
   return 0;
