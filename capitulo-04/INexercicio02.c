@@ -4,7 +4,7 @@
     Email: manuel.sousa06@aluno.ifce.edu.br
 
     Descricao: 
-        Exercicio 01 do Capitulo 4
+        Exercicio 02 do Capitulo 4
 
         Enunciado:
             Considerando que a potenciaçao e o resultado de varias multiplicacoes e
@@ -25,9 +25,7 @@ int main() {
     printf("Digite um expoente: ");
     scanf("%d", &expoente);
 
-    if(expoente == 0)
-        acumulador_resultado = 1;
-    else {
+    if(expoente != 0) {
         acumulador_resultado = 0;
         // falta desenvolver a soma
     }
