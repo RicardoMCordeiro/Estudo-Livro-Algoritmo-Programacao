@@ -7,8 +7,7 @@
         Exercicio 01 do Capitulo 5
 
         Enunciado: Faca um algoritmo que receba o tamanho dos tres lados de um triangulo e faca as seguintes atividades: retorne 
-        se os tres lados realmente formam um triangulo e que tipo de triangulo eh esse. Cada uma destas atividades deve ser um modulo.
-        
+        se os tres lados realmente formam um triangulo e que tipo de triangulo eh esse. Cada uma destas atividades deve ser um modulo.        
 */
 #include <stdio.h>
 
@@ -27,12 +26,29 @@ int main() {
 */
     float segmento_AB, segmento_CD, segmento_EF;
     
-    printf("Informe o valor do primeiro lado do triangulo:");
-    scanf("%f", &segmento_AB);
-    printf("Informe o valor do segundo lado do triangulo:");
-    scanf("%f", &segmento_CD);
-    printf("Informe o valor do terceiro lado do triangulo:");
-    scanf("%f", &segmento_EF);
+    do {
+        printf("Informe o valor do primeiro lado do triangulo: ");
+        scanf("%f", &segmento_AB);
+        //error
+        if (segmento_AB <= 0)
+            printf("ERROR: medida negativa ou nula! Tente novamente.\n");
+    } while (segmento_AB <= 0);
+    
+    do {
+        printf("Informe o valor do segundo lado do triangulo: ");
+        scanf("%f", &segmento_CD);
+        //error
+        if (segmento_AB <= 0)
+            printf("ERROR: medida negativa ou nula! Tente novamente.\n");
+    } while (segmento_CD <= 0);
+    
+    do {
+        printf("Informe o valor do terceiro lado do triangulo: ");
+        scanf("%f", &segmento_EF);
+        //error
+        if (segmento_AB <= 0)
+            printf("ERROR: medida negativa ou nula! Tente novamente.\n");
+    } while (segmento_CD <= 0);
     
     existenciaTriangulo(segmento_AB, segmento_CD, segmento_EF);
     tipoTiangulo(segmento_AB, segmento_CD, segmento_EF);
@@ -40,23 +56,25 @@ int main() {
     return 0;
 }
 
-void existenciaTriangulo(float segmento_AB, float segmento_CD, float segmento_EF){
-    if(segmento_AB + seguimento_CD > seguimento_EF && seguimento_CD + seguimento_EF > seguimento_AB && seguimento_AB + seguimento_EF > CD){
-        printf("O triangulo possui a condicao de existencia!");
-    }else{
-        printf("O triangulo nao possui a condicao de existencia!");
+void existenciaTriangulo(float segmento_AB, float segmento_CD, float segmento_EF) {
+    if (segmento_AB + segmento_CD > segmento_EF && 
+        segmento_CD + segmento_EF > segmento_AB && 
+        segmento_AB + segmento_EF > segmento_CD) {
+        printf("O triangulo possui a condicao de existencia!\n");
+    } else {
+        printf("O triangulo nao possui a condicao de existencia!\n");
     }
 }
 
-void tipoTiangulo(float segmento_AB, float segmento_CD, float segmento_EF){
-    if(segmento_AB + seguimento_CD > seguimento_EF && seguimento_CD + seguimento_EF > seguimento_AB && seguimento_AB + seguimento_EF > CD){
-        if(segmento_AB == seguimento_CD && seguimento_AB == seguimento_EF)
-            printf("Triangulo equilatero.");
-        if(segmento_AB == seguimento_CD && seguimento_AB != seguimento_EF)
-            printf("Triangulo isosceles.");
-        if(segmento_AB != seguimento_CD && seguimento_AB != seguimento_EF)
-            printf("Triangulo escaleno.");
+void tipoTiangulo(float segmento_AB, float segmento_CD, float segmento_EF) {
+    if (segmento_AB + segmento_CD > segmento_EF && 
+        segmento_CD + segmento_EF > segmento_AB && 
+        segmento_AB + segmento_EF > segmento_CD) {
+        if (segmento_AB == segmento_CD && segmento_AB == segmento_EF)
+            printf("Triangulo equilatero.\n");
+        if (segmento_AB == segmento_CD && segmento_AB != segmento_EF)
+            printf("Triangulo isosceles.\n");
+        if (segmento_AB != segmento_CD && segmento_AB != segmento_EF)
+            printf("Triangulo escaleno.\n");
     }
 }
-        
-        
