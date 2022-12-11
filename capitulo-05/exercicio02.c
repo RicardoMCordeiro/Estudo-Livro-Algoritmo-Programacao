@@ -20,27 +20,27 @@ int main(void) {
   Ajustando a operacao, temos que o:
   MMC de A e B = (A * B) / MDC de A e B
 */
-  int num1, num2;
-  printf("Informe os dois numeros que deseja calcular o MMC: ");
-  scanf("%d", &num1);
-  scanf("%d", &num2);
-  printf("O MMC de %d e %d e igual a: %d\n", num1, num2, calcularMMC(num1, num2));
-  
-  return 0;
+	int num1, num2;
+	printf("Informe os dois numeros que deseja calcular o MMC: ");
+	scanf("%d", &num1);
+	scanf("%d", &num2);
+	printf("O MMC de %d e %d e igual a: %d\n", num1, num2, calcularMMC(num1, num2));
+
+	return 0;
 }
 
 int calcularMMC(int num1, int num2){
-  int resto, num_a, num_b, mmc;
-  num_a = num1;
-  num_b = num2;
+	int resto, num_a, num_b, mmc;
+	num_a = num1;
+	num_b = num2;
   
-  do {
-      resto = num_a % num_b;
-      num_a = num_b;
-      num_b = resto;
-  } while (resto != 0);
-  
-  mmc = (num1 * num2) / num_a;
-  
-  return mmc;
+	do {
+		resto = num_a % num_b;
+		num_a = num_b;
+		num_b = resto;
+	} while (resto != 0);
+	
+	mmc = (num1 * num2) / num_a;
+	
+	return mmc;
 }
