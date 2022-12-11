@@ -13,7 +13,8 @@
 
         Resposta:
         a.  nao (V e (V ou F)) = 
-            nao (V e V) = nao (V) = 
+            nao (V e V) = 
+            nao (V) = 
             F = Falso;
 
         b.  nao (V e nao(V ou F)) = 
