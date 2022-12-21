@@ -7,8 +7,8 @@
         Exercicio 02 do Capitulo 3
        
        Enunciado: Faça um algoritmo que leia um número inteiro e 
-        diga se este numero e positivo, negativo ou zero. Utilize
-        a sequencia de [se encadeado]      
+        diga se este e positivo, negativo ou zero. Utilize
+        a sequencia de comandos se encadeados.      
 */
 #include <stdio.h>
 

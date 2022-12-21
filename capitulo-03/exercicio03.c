@@ -6,8 +6,9 @@
     Descricao: 
         Exercicio 03 do Capitulo 3
        
-        Enunciado: Faça um algoritmo que leia um numero inteiro e 
-        diga se este numero e par ou impar
+        Enunciado: Faca um algoritmo que determine se um dado numero
+        e par ou impar (utilize o operador resto: <dividendo> resto <divisor>,
+        que retorna o resto da divisao inteira de <dividendo>/<divisor>).
 */
 #include <stdio.h>
 

@@ -7,7 +7,7 @@
         Exercicio 01 do Capitulo 3
         
         Enunciado: Faça um algoritmo que leia um número inteiro diferente de zero e 
-        diga se este numero e positivo ou negativo        
+        diga se este numero e positivo ou negativo.        
 */
 #include <stdio.h>
 
