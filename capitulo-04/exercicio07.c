@@ -4,7 +4,7 @@
     Email: manuel.sousa06@aluno.ifce.edu.br
 
     Descricao: 
-        Exercicio 06 do Capitulo 4
+        Exercicio 05 do Capitulo 4
 
         Enunciado:
         Dada a definicao de MMC: "dados dois numeros inteiros a e b nao nulos, define-
