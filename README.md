@@ -3,7 +3,7 @@ Resolução dos exercícios dos capítulos do livro Algoritmos e programação T
 
 
 ## Solucionadores
-Capítulo 1: <a href="https://github.com/Jessicaifce">Jéssica Carvalho e Silva</a><br>
+Capítulo 1: <a href="https://github.com/WandersonGomes">Wanderson Gomes da Costa</a><br>
 Capítulo 2: <a href="https://github.com/Luca-Sousa">Lucas de Sousa Silva</a><br>
 Capítulo 3: <a href="https://github.com/Sp4rkjpedro">João Pedro Araújo Arruda</a><br>
 Capítulo 4: <a href="https://github.com/1manuelc">Manuel Carlos Gomes de Sousa</a><br>
