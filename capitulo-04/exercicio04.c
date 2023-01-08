@@ -30,10 +30,7 @@ int main() {
                 flag_primo = 0;
         }
 
-        if (flag_primo) {
-            printf("%d\n", numero);
-            soma_primos += numero;
-        }
+        if (flag_primo) soma_primos += numero;
     }
 
     //saida
