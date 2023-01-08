@@ -30,7 +30,7 @@ int main() {
     
     media = (numero_1 + numero_2 + numero_3 + numero_4) / 4;
 
-    printf("A sua Media e: %.2lf", media);
+    printf("A sua Media e: %.2lf\n", media);
     
     return 0;
 }
