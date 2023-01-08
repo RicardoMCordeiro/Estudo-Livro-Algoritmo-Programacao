@@ -25,7 +25,7 @@ int main() {
             printf("ERRO: Digite um valor maior que 5\n");
     } while (valor_n <= 5);
 
-    for (int i = 5; i < valor_n; i++)
+    for (int i = 5; i <= valor_n; i++)
         acumulador_somatorio += (2 * (i * i) + (5 * i) + 1);
     
     printf("Resultado do somatorio = %d\n", acumulador_somatorio);
