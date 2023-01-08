@@ -6,7 +6,7 @@
     Descricao: 
         Exercicio 06 do Capitulo 4
 
-        Enunciado:
+        Enunciado: 
         Dada a definicao de MMC: "dados dois numeros inteiros a e b nao nulos, define-
         se o minimo multiplo comum (MMC) como sendo o menor inteiro positivo,
         multiplo comum de a e b", faca um algoritmo que leia dois numeros e encontre o
