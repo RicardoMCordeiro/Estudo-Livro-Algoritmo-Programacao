@@ -4,20 +4,22 @@
     Email: manuel.sousa06@aluno.ifce.edu.br
 
     Descricao: 
-        Exercicio 05 do Capitulo 4
+        Exercicio 07 do Capitulo 4
 
         Enunciado:
-        Dada a definicao de MMC: "dados dois numeros inteiros a e b nao nulos, define-
-        se o minimo multiplo comum (MMC) como sendo o menor inteiro positivo,
-        multiplo comum de a e b", faca um algoritmo que leia dois numeros e encontre o
-        minimo multiplo comum (MMC). Esse algoritmo deve utilizar o seguinte metodo
-        para calcular o MMC: "multiplicar os dois numeros e dividir pelo MDC (maximo
-        divisor comum)".
+        Faca um novo algoritmo para calculo do MMC de dois numeros, mas que em vez
+        de utilizar a fatoracao, parta do seguinte principio: "o MMC e o menor numero
+        maior ou igual ao maior dos dois numeros escolhidos e que e divisivel pelos dois
+        numeros iniciais." Portanto, parta do maior dos dois numeros e verifique, dentro
+        do laco, se o numero e o MMC testando sua divisibilidade pelos dois numeros.
 */
 #include <stdio.h>
 
 int main() {
-    int numero_a, numero_b, maior, mdc, mmc;
+    int numero_a, 
+        numero_b, 
+        maior, 
+        mmc;
     
     do {
         printf("Digite o numero A: ");
@@ -39,16 +41,13 @@ int main() {
     } while (numero_b == 0);
 
     //realiza logo a multiplicacao, pois os dois numeros serao modificados
-    mmc = numero_a * numero_b; 
+    maior = (numero_a > numero_b) ? numero_a : numero_b;
 
-    while (numero_b != 0) {
-        int temp = numero_a % numero_b;
-        numero_a = numero_b;
-        numero_b = temp;
+    while (1) {
+        mmc += maior;
+        
+        if ((mmc % numero_a == 0) && (mmc % numero_b == 0)) break;
     }
-    mdc = numero_a;
-
-    mmc = mmc/mdc;
 
     printf("MMC = %d\n", mmc);
     
